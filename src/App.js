@@ -30,7 +30,7 @@ const App = () => {
       data.sort((a, b) => parseFloat(b.priceInput) - parseFloat(a.priceInput));
     }
     if(type == 'date'){
-      data.sort((a, b) => parseFloat(a.date) - parseFloat(b.date));
+      data.sort((a, b) => parseFloat(b.date) - parseFloat(a.date));
     }
   }
 
