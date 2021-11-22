@@ -6,6 +6,7 @@ const Badge = ({onClick}) => {
 
     const [selectedBtn, setSelectedBtn] = useState('')
     const handleClick = (type) => {
+        setSelectedBtn(type)
         onClick(type)
 
     }
