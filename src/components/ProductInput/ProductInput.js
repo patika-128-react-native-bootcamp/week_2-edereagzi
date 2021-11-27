@@ -11,16 +11,18 @@ const ProductInput = ({click}) => {
 
     const handleSetText = () => {
         if(nameInput !== '' && priceInput !== ''){
-            click({nameInput,priceInput,date:Date.now()}) 
+            click({nameInput,priceInput,date:Date.now()})
+            setNameInput('')
+            setPriceInput('')
         }
     }
 
     return (
         <View>
             <Text style={styles.text_input_header}>Name</Text>
-            <TextInput onChangeText={setNameInput} style={styles.text_input} />
+            <TextInput onChangeText={setNameInput} value={nameInput} style={styles.text_input} />
             <Text style={styles.text_input_header}>Price</Text>
-            <TextInput onChangeText={setPriceInput} style={styles.text_input} />
+            <TextInput onChangeText={setPriceInput} value={priceInput} style={styles.text_input} />
             <Button title='Add' onClick={handleSetText} />
         </View>
 
