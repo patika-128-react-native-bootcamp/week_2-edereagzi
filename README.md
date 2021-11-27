@@ -1,2 +1,4 @@
-# week_2-edereagzi
-week_2-edereagzi created by GitHub Classroom
+Price List Application
+
+
+![](https://i.imgur.com/xsdP4AP.gif)
